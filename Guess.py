@@ -12,6 +12,7 @@
 
 #Imported random library
 import random
+import sys
 
 # random number function that spits out a number between 1 and 100
 def random_num():
@@ -40,7 +41,7 @@ def guess_num():
             # else if the answer is n, then say thanks for playing and break out of the while loop
             elif repeat == "n":
                 print("Okay, Thanks for playing")
-                break
+                sys.exit()
             # if the value is not y or n, then print invalid input and ask if you would like to play again
             else:
                 print("Invalid input. Try again")
